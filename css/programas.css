@@ -1,0 +1,274 @@
+/*=========================================
+        BANNER
+=========================================*/
+
+.banner img{
+
+      width:100%;
+    height:auto;
+    object-fit:cover;
+
+}
+
+/*=========================================
+        TITULO
+=========================================*/
+
+.titulo-programas{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:50px auto;
+
+    text-align:center;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.titulo-programas h2{
+
+    color:#003366;
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.titulo-programas p{
+
+    color:#444;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/*=========================================
+        CONTENEDOR TARJETAS
+=========================================*/
+
+.programa{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:40px auto;
+
+}
+
+.programa .contenido{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.programa .contenido:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+}
+
+/*=========================================
+        IMAGEN
+=========================================*/
+
+.programa img{
+
+    width:360px;
+
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    transition:.4s;
+
+}
+
+.programa img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/*=========================================
+        TEXTO
+=========================================*/
+
+.programa article{
+
+    flex:1;
+
+}
+
+.programa h2{
+
+    color:#003366;
+
+    margin-bottom:15px;
+
+}
+
+.programa p{
+
+    text-align:justify;
+
+    line-height:1.8;
+
+    color:#444;
+
+    margin-bottom:20px;
+
+}
+
+.programa ul{
+
+    margin-left:25px;
+
+    margin-bottom:25px;
+
+}
+
+.programa li{
+
+    margin-bottom:10px;
+
+}
+
+/*=========================================
+        BOTON
+=========================================*/
+
+.boton{
+
+    display:inline-block;
+
+    background:#00509d;
+
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.boton:hover{
+
+    background:#003366;
+
+    transform:scale(1.05);
+
+}
+
+/*=========================================
+        ASIDE
+=========================================*/
+
+aside{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:60px auto;
+
+    background:#003366;
+
+    color:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+}
+
+aside h2{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+aside ul{
+
+    margin-left:25px;
+
+    margin-top:20px;
+
+}
+
+aside li{
+
+    margin-bottom:12px;
+
+}
+
+/*=========================================
+        RESPONSIVE
+=========================================*/
+
+@media(max-width:900px){
+
+    .programa .contenido{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .contenido.inverso{
+
+        flex-direction:column;
+
+    }
+
+    .programa img{
+
+        width:100%;
+
+        height:auto;
+
+    }
+
+    .programa p{
+
+        text-align:left;
+
+    }
+
+}

@@ -1,0 +1,245 @@
+
+/*=========================================
+            PAGINA NOSOTROS
+=========================================*/
+
+#historia,
+#mision,
+#vision,
+#perfil,
+#instalaciones{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:50px auto;
+
+    padding:35px;
+
+    background:white;
+
+    border-radius:12px;
+
+    box-shadow:0 0 15px rgba(0,0,0,.12);
+
+    transition:.35s;
+
+}
+
+#historia:hover,
+#mision:hover,
+#vision:hover,
+#perfil:hover,
+#instalaciones:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.20);
+
+}
+
+/*=========================================
+        CONTENIDO
+=========================================*/
+
+.contenido{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:45px;
+
+}
+
+/* Alternar imagen */
+
+.contenido.inverso{
+
+    flex-direction:row-reverse;
+
+}
+
+/*=========================================
+            TEXTO
+=========================================*/
+
+.contenido article{
+
+    flex:2;
+
+}
+
+.contenido article p{
+
+    text-align:justify;
+
+    color:#333;
+
+    line-height:1.9;
+
+    font-size:17px;
+
+    margin-bottom:18px;
+
+}
+
+/*=========================================
+            TITULOS
+=========================================*/
+
+section h2{
+
+    text-align:center;
+
+    color:#003366;
+
+    font-size:38px;
+
+    margin-bottom:35px;
+
+}
+
+section h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:5px;
+
+    background:#00509d;
+
+    margin:12px auto;
+
+    border-radius:20px;
+
+}
+
+/*=========================================
+            IMAGENES
+=========================================*/
+
+.contenido img{
+
+    flex:1;
+
+    width:100%;
+
+    max-width:420px;
+
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    transition:.4s;
+
+}
+
+.contenido img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/*=========================================
+            PERFIL
+=========================================*/
+
+#perfil ul{
+
+    margin-left:25px;
+
+}
+
+#perfil li{
+
+    margin-bottom:10px;
+
+}
+
+#perfil ul ul{
+
+    margin-top:10px;
+
+    list-style:circle;
+
+}
+
+/*=========================================
+            ASIDE
+=========================================*/
+
+aside{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:50px auto;
+
+    padding:35px;
+
+    background:#003366;
+
+    color:white;
+
+    border-radius:12px;
+
+}
+
+aside h2{
+
+    color:white;
+
+}
+
+aside h2::after{
+
+    background:white;
+
+}
+
+aside ul{
+
+    margin-left:20px;
+
+}
+
+aside li{
+
+    margin-bottom:12px;
+
+}
+
+/*=========================================
+            RESPONSIVE
+=========================================*/
+
+@media(max-width:900px){
+
+    .contenido{
+
+        flex-direction:column;
+
+    }
+
+    .contenido.inverso{
+
+        flex-direction:column;
+
+    }
+
+    .contenido img{
+
+        max-width:100%;
+
+        height:auto;
+
+    }
+
+}

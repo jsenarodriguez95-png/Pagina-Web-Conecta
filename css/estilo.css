@@ -1,0 +1,624 @@
+/* =====================================
+   RESET GENERAL
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =====================================
+   ESTILOS GENERALES
+===================================== */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:1.6;
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+header{
+    background:#003366;
+    color:white;
+    
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 50px;
+}
+
+.logo img{
+    width:200px;
+}
+
+.identidad{
+    text-align:center;
+}
+
+.identidad h1{
+    font-size:2rem;
+}
+
+.identidad p{
+    font-style:italic;
+}
+
+.certificado{
+    text-align:right;
+    max-width:250px;
+}
+
+button{background-color: beige;
+    border: none;
+    color: #00509d;
+    padding: 15px 30px;
+text-decoration: none;
+font-size: 1.4rem;
+border-radius: 12px;
+font-family: sans-serif;}
+
+
+/* =====================================
+   MENÚ
+===================================== */
+
+nav{
+    background:#00509d;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.menu{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+}
+
+.menu li{
+    position:relative;
+}
+
+.menu li a{
+    display:block;
+    color:white;
+    padding:15px 25px;
+    transition:0.3s;
+}
+
+.menu li a:hover{
+    background:#003366;
+}
+
+/* SUBMENÚ */
+
+.submenu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#003366;
+    min-width:220px;
+    list-style:none;
+    z-index:1000;
+}
+
+.submenu li a{
+    padding:12px;
+}
+
+.menu li:hover .submenu{
+    display:block;
+}
+
+/* =====================================
+   BANNER
+===================================== */
+
+.banner img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+/* =====================================
+   SECCIONES GENERALES
+===================================== */
+
+section{
+    padding:60px 10%;
+}
+
+section h2{
+    text-align:center;
+    color:#003366;
+    margin-bottom:25px;
+}
+
+/* =====================================
+   PRESENTACIÓN
+===================================== */
+
+.presentacion{
+    background:white;
+    text-align:center;
+}
+
+.presentacion p{
+    max-width:900px;
+    margin:15px auto;
+}
+
+/* =====================================
+   VALORES
+===================================== */
+.valores{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.valores h2{
+    text-align:center;
+    color:#f2f3f3;
+    grid-column:1 / 5;
+}
+
+
+/* =====================================
+   PROGRAMAS
+===================================== */
+
+.programas{
+    background:#eef5ff;
+}
+
+.contenedor-programas{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.tarjeta{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.tarjeta img{
+    height:250px;
+    width:100%;
+    object-fit:cover;
+}
+
+.tarjeta h3{
+    color:#003366;
+    padding:15px;
+}
+
+.tarjeta p{
+    padding:0 15px 20px;
+}
+
+/* =====================================
+   NOTICIA DESTACADA
+===================================== */
+
+.noticia{
+    text-align:center;
+    background:white;
+}
+
+.noticia article{
+    max-width:700px;
+    margin:auto;
+}
+
+.noticia a{
+    display:inline-block;
+    margin-top:15px;
+    background:#00509d;
+    color:white;
+    padding:12px 20px;
+    border-radius:5px;
+}
+
+.noticia a:hover{
+    background:#003366;
+}
+
+/* =====================================
+   GALERÍA
+===================================== */
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.galeria h2{
+    grid-column:1/4;
+}
+
+.galeria img{
+    border-radius:10px;
+    height:250px;
+    object-fit:cover;
+}
+
+/* =====================================
+   VIDEO
+===================================== */
+
+.video{
+    text-align:center;
+    background:white;
+}
+
+.video iframe{
+    width:90%;
+    max-width:900px;
+    height:500px;
+    border:none;
+}
+
+/* =====================================
+   AUDIO
+===================================== */
+
+.audio{
+    text-align:center;
+}
+
+.audio audio{
+    width:80%;
+    max-width:600px;
+}
+
+/* =====================================
+   ASIDE
+===================================== */
+
+aside{
+    background:#003366;
+    color:white;
+    padding:40px;
+    margin:50px;
+    border-radius:10px;
+}
+
+aside h2{
+    color:white;
+    margin-bottom:20px;
+}
+
+aside ul{
+    list-style:square;
+    padding-left:20px;
+}
+
+aside li{
+    margin-bottom:10px;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer{
+    background:#001f3f;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer p{
+    margin:10px 0;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+    }
+
+    .menu{
+        flex-direction:column;
+    }
+
+    .valores{
+        grid-template-columns:1fr;
+    }
+
+    .contenedor-programas{
+        grid-template-columns:1fr;
+    }
+
+    .galeria{
+        grid-template-columns:1fr;
+    }
+
+    .galeria h2{
+        grid-column:auto;
+    }
+
+    .video iframe{
+        height:250px;
+    }
+
+}
+
+/*=========================================
+            PAGINA NOSOTROS
+=========================================*/
+
+#historia,
+#mision,
+#vision,
+#perfil,
+#instalaciones{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:50px auto;
+
+    padding:35px;
+
+    background:white;
+
+    border-radius:12px;
+
+    box-shadow:0 0 15px rgba(0,0,0,.12);
+
+    transition:.35s;
+
+}
+
+#historia:hover,
+#mision:hover,
+#vision:hover,
+#perfil:hover,
+#instalaciones:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.20);
+
+}
+
+/*=========================================
+        CONTENIDO
+=========================================*/
+
+.contenido{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:45px;
+
+}
+
+/* Alternar imagen */
+
+.contenido.inverso{
+
+    flex-direction:row-reverse;
+
+}
+
+/*=========================================
+            TEXTO
+=========================================*/
+
+.contenido article{
+
+    flex:2;
+
+}
+
+.contenido article p{
+
+    text-align:justify;
+
+    color:#333;
+
+    line-height:1.9;
+
+    font-size:17px;
+
+    margin-bottom:18px;
+
+}
+
+/*=========================================
+            TITULOS
+=========================================*/
+
+section h2{
+
+    text-align:center;
+
+    color:#003366;
+
+    font-size:38px;
+
+    margin-bottom:35px;
+
+}
+
+section h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:5px;
+
+    background:#00509d;
+
+    margin:12px auto;
+
+    border-radius:20px;
+
+}
+
+/*=========================================
+            IMAGENES
+=========================================*/
+
+.contenido img{
+
+    flex:1;
+
+    width:100%;
+
+    max-width:420px;
+
+    height:300px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    transition:.4s;
+
+}
+
+.contenido img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/*=========================================
+            PERFIL
+=========================================*/
+
+#perfil ul{
+
+    margin-left:25px;
+
+}
+
+#perfil li{
+
+    margin-bottom:10px;
+
+}
+
+#perfil ul ul{
+
+    margin-top:10px;
+
+    list-style:circle;
+
+}
+
+/*=========================================
+            ASIDE
+=========================================*/
+
+aside{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:50px auto;
+
+    padding:35px;
+
+    background:#003366;
+
+    color:white;
+
+    border-radius:12px;
+
+}
+
+aside h2{
+
+    color:white;
+
+}
+
+aside h2::after{
+
+    background:white;
+
+}
+
+aside ul{
+
+    margin-left:20px;
+
+}
+
+aside li{
+
+    margin-bottom:12px;
+
+}
+
+/*=========================================
+            RESPONSIVE
+=========================================*/
+
+@media(max-width:900px){
+
+    .contenido{
+
+        flex-direction:column;
+
+    }
+
+    .contenido.inverso{
+
+        flex-direction:column;
+
+    }
+
+    .contenido img{
+
+        max-width:100%;
+
+        height:auto;
+
+    }
+
+}
